@@ -203,3 +203,44 @@ p{
     padding-bottom: 32px;
     padding-top: 32px;
 }
+
+.gr-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    list-style-type: none;
+}
+/*
+.ul1, .ul2, .div-connect, .ColumnContents {
+    margin-left: 30%;
+    
+}*/
+
+.responsiveSiteFooter__heading{
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.15;
+    text-transform: uppercase;
+    
+
+}
+
+.responsiveSiteFooter__linkListItem{
+    font-size: 14px;
+    color: rgb(196, 198, 199);
+
+}
+.responsiveSiteFooter__link{
+    color: rgb(196, 198, 199);
+
+}
+.responsiveSiteFooter__socialLink img{
+    color: rgb(196, 198, 199);
+}
+
+#library-inc{
+    padding: 5px;
+}
