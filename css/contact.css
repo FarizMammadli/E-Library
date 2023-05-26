@@ -98,8 +98,8 @@ section{
 
 .container{
     margin-top: 100px;
-    margin-left: 5px;
-    margin-right: 5px;
+    display: flex;
+    justify-content: center ;  
 }
 .sign-in-p{
     color: aliceblue;
@@ -163,6 +163,9 @@ textarea{
     margin-bottom: 10px;
 }
 
+form{
+    width: 50%;
+}
 
 
 
@@ -194,6 +197,8 @@ ul{
     font-weight: bold;
     line-height: 1.15;
     text-transform: uppercase;
+    color: beige;
+    margin-bottom: 5px;
     
 
 }
