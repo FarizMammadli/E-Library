@@ -146,6 +146,9 @@ section{
     font-size: 1.5rem;
     color:chocolate;
 }
+.current-a{
+    color:chocolate;
+}
 
 .header .cart-items-container .btn{
     width: 100%;
@@ -212,6 +215,7 @@ section{
 .gr-row{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 ul{

@@ -78,6 +78,10 @@ section{
     font-size: 1.6rem;
     color:#fff;
 }
+.current-a{
+    color:chocolate;
+}
+
 
 .header .navbar a:hover{
     color:chocolate;
@@ -158,6 +162,21 @@ section{
     padding: 10px;
 }
 
+.title-h3{
+    text-align: center;
+    color:beige;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.author-p{
+    color: beige;
+}
+
+.price-p{
+    color: beige;
+    font: 12px;
+}
 
 /* footer start  */
 
@@ -170,6 +189,7 @@ section{
 .gr-row{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 ul{
@@ -187,7 +207,8 @@ ul{
     font-weight: bold;
     line-height: 1.15;
     text-transform: uppercase;
-    
+    color: beige;
+    margin-bottom: 5px;
 
 }
 

@@ -95,6 +95,9 @@ section{
 .header .icons div:hover{
     color:chocolate;
 }
+.current-a{
+    color:chocolate;
+}
 
 .container{
     margin-top: 100px;
@@ -180,6 +183,7 @@ form{
 .gr-row{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 ul{

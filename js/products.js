@@ -59,10 +59,10 @@ function displayResults(books) {
     const bookElement = document.createElement('div');
     bookElement.classList.add('div-element')
     bookElement.innerHTML = `
-      <h3>${title}</h3>
-      <p>Yazıçı: ${author}</p>
+      <h3 class="title-h3">${title}</h3>
+      <p class="author-p">Yazıçı: ${author}</p>
       <img src="${image}" alt="Kitab şəkli">
-      <p>Satış Qiyməti: ${price} AZN</p>
+      <p class="price-p">Satış Qiyməti: ${price} AZN</p>
     `;
 
     results.appendChild(bookElement);

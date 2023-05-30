@@ -99,6 +99,10 @@ section{
 .image1{
     text-align: center;
 }
+.current-a{
+    color:chocolate;
+}
+
 
 h3{
     color: beige;
@@ -209,6 +213,7 @@ p{
 .gr-row{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 ul{
