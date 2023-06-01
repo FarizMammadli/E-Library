@@ -141,6 +141,9 @@ section{
 
 #results{
     margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: center;
     
     display: flex;
     flex-wrap: wrap;
