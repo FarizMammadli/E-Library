@@ -25,12 +25,12 @@
 
     </header>
     <div class="container">
-        <form>
+        <form id="contactForm">
             <h1 class="cntc-us">Contact Us</h1>
             <p class="sign-in-p">Please <a class="sign-in-a" href="#">Sign in</a> so we can better answer your query.
             </p>
             <h4 class="h4-headers">What can we help you with?</h4>
-            <select name="help" id="">
+            <select name="help" id="q-type">
                 <option value="">-- select question type (required) --</option>
                 <option value="book_records">Book records: Adding or editing</option>
                 <option value="account_settings">Account Settings</option>
@@ -50,7 +50,7 @@
                 <option value="other">Other</option>
             </select>
             <h4 class="h4-headers">What device were you using?</h4>
-            <select name="device" id="">
+            <select name="device" id="d-type">
                 <option value="">-- select device type (required) --</option>
                 <option value="android">Android</option>
                 <option value="desktop">Desktop</option>
@@ -59,7 +59,7 @@
                 <option value="other">Other</option>
             </select>
             <h4 class="h4-headers">Are you reaching out as a publisher, author, neither, or both?</h4>
-            <select name="publisher?" id="">
+            <select name="publisher?" id="c-type">
                 <option value="">-- select contact type (required) --</option>
                 <option value="publisher">Publisher</option>
                 <option value="author">Author</option>
@@ -67,12 +67,12 @@
                 <option value="both">Both</option>
             </select>
             <h4 class="h4-headers">Email address</h4>
-            <input type="text" class="email-input">
+            <input type="text" class="email-input" id="e-input">
             <h4 class="h4-headers">What does this inquiry relate to? (2-3 words)</h4>
-            <input type="text" class="what-does">
+            <input type="text" class="what-does" id="w-input">
             <h4 class="h4-headers">Your question - please be specific. Note that Goodreads currently only offers English-language support.
             </h4>
-            <textarea name="txt" id="" cols="30" rows="10"></textarea>
+            <textarea name="txt" id="txt-area" cols="30" rows="10"></textarea>
             <button class="submit">Submit</button>
 
 
@@ -158,8 +158,9 @@
         </div>
         
         </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
 
-
+<script src="./js/contact.js"></script>
 </body>
 
 </html>
