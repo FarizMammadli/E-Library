@@ -83,7 +83,7 @@ const books = initialBooks.map(book => {
   const author = book.authors ? book.authors : 'Yazıçı bilgisi tapılmadı';
   const image = book.image ? book.image : 'Şəkil tapılmadı';
   const price = getRandomPrice();
-  
+
 
   return {
     title,
@@ -98,7 +98,7 @@ displayResults(books);
 
 const randomBooks = generateRandomBooks(20);
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function (event) {
   event.preventDefault();
 
   const searchTerm = input.value;
@@ -112,7 +112,7 @@ form.addEventListener('submit', function(event) {
         const author = book.volumeInfo.authors ? book.volumeInfo.authors[0] : 'Yazıçı bilgisi tapılmadı';
         const image = book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : 'Şəkil tapılmadı';
         const price = getRandomPrice();
-        
+
 
         return {
           title,
@@ -124,6 +124,7 @@ form.addEventListener('submit', function(event) {
 
       const books = searchTerm ? filteredBooks : initialBooks.concat(randomBooks);
       displayResults(books);
+      basketControl()
     });
 });
 
@@ -140,6 +141,7 @@ function displayResults(books) {
       <p class="author-p">Yazıçı: ${author}</p>
       <img src="${image}" alt="Kitab şəkli">
       <p class="price-p">Satış Qiyməti: ${price} AZN</p>
+      <button class="cart-btn">Add to Cart</button>
     `;
 
     results.appendChild(bookElement);
@@ -167,7 +169,38 @@ function generateRandomBooks(count) {
 }
 
 function getRandomPrice() {
-  const min = 10; 
-  const max = 100; 
+  const min = 10;
+  const max = 100;
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+function basketControl() {
+  const boxes = [...document.querySelectorAll('.div-element')]
+  const liked = JSON.parse(localStorage.getItem('liked')) || []
+
+
+  document.querySelectorAll('.cart-btn').forEach(btn => {
+    btn.addEventListener('click', x => {
+      const div = x.target.parentElement;
+      const t = {}
+      t.h3 = div.children[0].innerText
+      t.p1 = div.children[1].innerText
+      t.img = div.children[2].src
+      t.p2 = div.children[3].innerText
+      let find = false
+      for (let i = 0; i < liked.length; i++) {
+        if (liked[i].h3 === t.h3) {
+          find = true;
+          break
+        }
+      }
+      if (!find) {
+        liked.push(t)
+        localStorage.setItem('liked', JSON.stringify(liked))
+      }
+    })
+  })
+}
+
+basketControl()

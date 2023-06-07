@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>E-Library Log In Page</title>
-        <link rel="stylesheet" href="./css/signUp.css">
+        <link rel="stylesheet" href="./css/signIn.css">
     </head>
     <body>
         <button id="backButton">Back</button>
+
 
         <div id="content_container">
             <div id="form_container">
@@ -16,15 +17,14 @@
 
                 <div id="form_content_container">
                     <div id="form_content_inner_container">
-                        <input type="text" id="full_name" placeholder="Full name">
+                        
                         <input type="email" id="email" placeholder="Email">
                         <input type="password" id="password" placeholder="New Password">
-                        <input type="text" id="location" placeholder="Location">
-                        <input type="text" id="age" placeholder="Age">
+                       
 
                         <div id="button_container">
-                            <a href="./signIn.html">  <button onclick="login()">Login</button></a>
-                            <button onclick="register()">Register</button>
+                            
+                            <button onclick="register()" id="btn-sign-in">Sign In</button>
                         </div>
 
                     </div>
@@ -32,7 +32,7 @@
             </div>
         </div>
     </body>
-    <!-- <script type="module">
+    <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
         // TODO: Add SDKs for Firebase products that you want to use
@@ -42,8 +42,8 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
         // Your web app's Firebase configuration
        
-      </script> -->
-  <script src="./js/logIn.js"></script>
+      </script>
+  <script src="./js/signIn.js"></script>
     
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Online Shopping</title>
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/basket.css">
 
 </head>
 
@@ -17,67 +17,18 @@
         </a>
 
         <nav class="navbar">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./products.html">Products</a>
-            <a href="./contact.html"><span class="current-a">Contact</span></a>
+            <a href="./index.html">home</a>
+            <a href="./about.html">about</a>
+            <a href="./products.html">products</a>
+            <a href="./contact.html">contact</a>
+            <a href="./basket.html"><img src="./images/add-to-cart.png" id="basket-img" alt="basket"></a>
+
         </nav>
 
     </header>
-    <div class="container">
-        <form id="contactForm">
-            <h1 class="cntc-us">Contact Us</h1>
-            <p class="sign-in-p">Please <a class="sign-in-a" href="./signIn.html">Sign in</a> so we can better answer your query.
-            </p>
-            <h4 class="h4-headers">What can we help you with?</h4>
-            <select name="help" id="q-type">
-                <option value="">-- select question type (required) --</option>
-                <option value="book_records">Book records: Adding or editing</option>
-                <option value="account_settings">Account Settings</option>
-                <option value="giveaways">Giveaways</option>
-                <option value="managing_your_bookshelves">Managing your bookshelves</option>
-                <option value="how_to_read">How to read books on Goodreads</option>
-                <option value="author_program">Author Program</option>
-                <option value="reading_challenge">Reading Challenge</option>
-                <option value="Your Year in Books">Your Year in Books</option>
-                <option value="friends_and_followers">Friends and followers</option>
-                <option value="twitter_facebook_and_social">Twitter, Facebook, and social</option>
-                <option value="goodreads_choice_awards">Goodreads Choice Awards</option>
-                <option value="account_suspension">Account Suspension</option>
-                <option value="suggestion">Make a feature suggestion</option>
-                <option value="bug">Report a bug</option>
-                <option value="spam_or_abuse">Report spam, abuse or other issue</option>
-                <option value="other">Other</option>
-            </select>
-            <h4 class="h4-headers">What device were you using?</h4>
-            <select name="device" id="d-type">
-                <option value="">-- select device type (required) --</option>
-                <option value="android">Android</option>
-                <option value="desktop">Desktop</option>
-                <option value="ios">iOS</option>
-                <option value="mobile_web">Mobile Web</option>
-                <option value="other">Other</option>
-            </select>
-            <h4 class="h4-headers">Are you reaching out as a publisher, author, neither, or both?</h4>
-            <select name="publisher?" id="c-type">
-                <option value="">-- select contact type (required) --</option>
-                <option value="publisher">Publisher</option>
-                <option value="author">Author</option>
-                <option value="neither">Neither</option>
-                <option value="both">Both</option>
-            </select>
-            <h4 class="h4-headers">Email address</h4>
-            <input type="text" class="email-input" id="e-input">
-            <h4 class="h4-headers">What does this inquiry relate to? (2-3 words)</h4>
-            <input type="text" class="what-does" id="w-input">
-            <h4 class="h4-headers">Your question - please be specific. Note that Goodreads currently only offers English-language support.
-            </h4>
-            <textarea name="txt" id="txt-area" cols="30" rows="10"></textarea>
-            <button class="submit">Submit</button>
-
-
-        </form>
-    </div>
+<div class="basket-div"></div>
+<div class="btn-div">
+<button class="allow-cart">Allow Cart</button></div>
     <footer class="responsiveSiteFooter">
         
         <div class="gr-row">
@@ -158,9 +109,8 @@
         </div>
         
         </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+<script src="./js/basket.js"></script>
 
-<script src="./js/contact.js"></script>
 </body>
 
 </html>

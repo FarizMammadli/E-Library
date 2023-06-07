@@ -31,6 +31,7 @@ const firebaseConfig = {
   
     //   reset the form
     document.getElementById("contactForm").reset();
+    alert('Sorğu uğurla göndərildi');
   }
 
 
@@ -41,9 +42,9 @@ const firebaseConfig = {
       help: help,
       device: device,
       publisher: publisher,
-      inputA: inputA,
-      inputW: inputW,
-      txt: txt,
+      Email_address: inputA,
+      Relate: inputW,
+      Text: txt,
     });
   };
   

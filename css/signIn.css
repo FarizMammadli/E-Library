@@ -19,7 +19,7 @@ body {
 
 #content_container {
     width: 35%;
-    height: 70%;
+    height: 40%;
 }
 
 #form_container {
@@ -112,6 +112,8 @@ input {
     color: #fff;
 
     float: left;
+    display: flex;
+    justify-content: center;
 
     margin-top: 5px;
 }
@@ -133,6 +135,7 @@ input {
     justify-content: center;
     align-items: center;
 }
+
 #backButton {
     position: fixed;
   top: 20px; 
