@@ -31,3 +31,23 @@ document.querySelectorAll('.cart-btn').forEach(btn => {
         }
     })
 })
+
+
+
+
+
+
+function acilirBlok() {
+    var blok = document.getElementById("acilirBlok");
+    blok.classList.toggle("acik");
+}
+
+function degerleriGoster() {
+    var deger1 = document.getElementById("input1").value;
+    var deger2 = document.getElementById("input2").value;
+    var deger3 = document.getElementById("input3").value;
+    alert("Değer 1: " + deger1 + "\nDeğer 2: " + deger2 + "\nDeğer 3:" + deger3);
+
+    var blok = document.getElementById("acilirBlok");
+    blok.classList.remove("acik");
+}
