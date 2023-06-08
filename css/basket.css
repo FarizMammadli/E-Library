@@ -192,6 +192,24 @@ input{
     
 }
 
+.orders{
+    overflow-y: scroll;
+    height: 100px;
+}
+
+
+.exit-button{
+    width: 10px;
+    height: 10px;
+    background: none ;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+#exit-button{
+    width: 20px;
+    height: 20px;
+}
 /* block end*/
 
 

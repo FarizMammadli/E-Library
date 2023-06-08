@@ -26,107 +26,130 @@
         </nav>
 
     </header>
-<div class="basket-div"></div>
- <div id="acilirBlok" class="blok">
-    <div class="container">
-    <p class="input-p">
-        Adınız
-        <input type="text" id="input1" placeholder="Ad"></p>
-         <p class="input-p">
-            Soyadınız
-        <input type="text" id="input2" placeholder="Soyad"></p>
-         <p class="input-p">
-            Ünvanınız
-        <input type="text" id="input3" placeholder="Ünvan"></p>
-        <p class="input-p">Sifarişlər</p>
-        
+    <div class="basket-div"></div>
+    <div id="acilirBlok" class="blok">
 
-        <button onclick="degerleriGoster()" id="tsdqET">Təstiq Et</button>
+        <div class="container">
+            <button onclick="exitPage()" class="exit-button"><img src="./images/exit.png" alt="exit" id="exit-button" ></button>
+            <form id="cartForm">
+                <p class="input-p">
+                    Adınız
+                    <input type="text" id="input1" placeholder="Ad">
+                </p>
+                <p class="input-p">
+                    Soyadınız
+                    <input type="text" id="input2" placeholder="Soyad">
+                </p>
+                <p class="input-p">
+                    Ünvanınız
+                    <input type="text" id="input3" placeholder="Ünvan">
+                </p>
+                <p class="input-p">Sifarişlər</p>
+                <div class="orders">
+
+                </div>
+
+                <button id="tsdqET">Təstiq Et</button>
+            </form>
+        </div>
     </div>
+    <div class="btn-div">
+        <button class="allow-cart" onclick="acilirBlok()">Allow Cart</button>
     </div>
-<div class="btn-div">
-<button class="allow-cart" onclick="acilirBlok()">Allow Cart</button></div>
     <footer class="responsiveSiteFooter">
-        
+
         <div class="gr-row">
-        <div class="ul1">
-        <h3 class="responsiveSiteFooter__heading">Company</h3>
-        <ul class="responsiveSiteFooter__linkList">
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="./about.html">About us</a>
-        </li>
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="#">Careers</a>
-        </li>
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="#">Terms</a>
-        </li>
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="#">Privacy</a>
-        </li>
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="#">Interest Based Ads</a>
-        </li>
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="#">Ad Preferences</a>
-        </li>
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="#">Help</a>
-        </li>
-        </ul>
-        </div>
-        <div class="ul2">
-        <h3 class="responsiveSiteFooter__heading">Work with us</h3>
-        <ul class="responsiveSiteFooter__linkList">
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="#">Authors</a>
-        </li>
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="#">Advertise</a>
-        </li>
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="#">Authors</a>
-        </li>
-        <li class="responsiveSiteFooter__linkListItem">
-        <a class="responsiveSiteFooter__link" href="#">API</a>
-        </li>
-        </ul>
-        </div>
-        
-        <div class="div-connect">
-            <h3 class="responsiveSiteFooter__heading">Connect</h3>
-            <div class="social-link">
-            <a class="responsiveSiteFooter__socialLink"  href="https://www.facebook.com/"><img alt="null" src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg">
-            </a><a class="responsiveSiteFooter__socialLink"  href="https://twitter.com/"><img alt="#" src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg">
-            </a></div>
-            <div class="social-link">
-            <a class="responsiveSiteFooter__socialLink"  href="https://www.instagram.com/"><img alt="#" src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg">
-            </a><a class="responsiveSiteFooter__socialLink"  href="https://www.linkedin.com/company/"><img alt="Goodreads on LinkedIn" src="https://s.gr-assets.com/assets/site_footer/footer_linkedin-5b820f4703eff965672594ef4d10e33c.svg">
-            </a></div>
+            <div class="ul1">
+                <h3 class="responsiveSiteFooter__heading">Company</h3>
+                <ul class="responsiveSiteFooter__linkList">
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="./about.html">About us</a>
+                    </li>
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">Careers</a>
+                    </li>
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">Terms</a>
+                    </li>
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">Privacy</a>
+                    </li>
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">Interest Based Ads</a>
+                    </li>
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">Ad Preferences</a>
+                    </li>
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ul2">
+                <h3 class="responsiveSiteFooter__heading">Work with us</h3>
+                <ul class="responsiveSiteFooter__linkList">
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">Authors</a>
+                    </li>
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">Advertise</a>
+                    </li>
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">Authors</a>
+                    </li>
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">API</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="div-connect">
+                <h3 class="responsiveSiteFooter__heading">Connect</h3>
+                <div class="social-link">
+                    <a class="responsiveSiteFooter__socialLink" href="https://www.facebook.com/"><img alt="null"
+                            src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg">
+                    </a><a class="responsiveSiteFooter__socialLink" href="https://twitter.com/"><img alt="#"
+                            src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg">
+                    </a>
+                </div>
+                <div class="social-link">
+                    <a class="responsiveSiteFooter__socialLink" href="https://www.instagram.com/"><img alt="#"
+                            src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg">
+                    </a><a class="responsiveSiteFooter__socialLink" href="https://www.linkedin.com/company/"><img
+                            alt="Goodreads on LinkedIn"
+                            src="https://s.gr-assets.com/assets/site_footer/footer_linkedin-5b820f4703eff965672594ef4d10e33c.svg">
+                    </a>
+                </div>
             </div>
 
             <div class="ColumnContents">
                 <div class="responsiveSiteFooter__appLinksColumnBadges">
-                <img  src="https://s.gr-assets.com/assets/app/badge-ios-desktop-homepage-6ac7ae16eabce57f6c855361656a7540.svg">
-                <img alt="#" srcset="https://s.gr-assets.com/assets/app/badge-android-desktop-home-2x-e31514e1fb4dddecf9293aa526a64cfe.png 2x" src="https://s.gr-assets.com/assets/app/badge-android-desktop-home-0f517cbae4d56c88a128d27a7bea1118.png">
+                    <img
+                        src="https://s.gr-assets.com/assets/app/badge-ios-desktop-homepage-6ac7ae16eabce57f6c855361656a7540.svg">
+                    <img alt="#"
+                        srcset="https://s.gr-assets.com/assets/app/badge-android-desktop-home-2x-e31514e1fb4dddecf9293aa526a64cfe.png 2x"
+                        src="https://s.gr-assets.com/assets/app/badge-android-desktop-home-0f517cbae4d56c88a128d27a7bea1118.png">
                 </div>
                 <ul class="responsiveSiteFooter__linkList">
-                <li id="library-inc" class="responsiveSiteFooter__linkListItem">
-                ©
-                2023
-                Library, Inc.
-                </li>
-                <li class="responsiveSiteFooter__linkListItem">
-                <a class="responsiveSiteFooter__link" href="#">Mobile version
-                </a></li>
+                    <li id="library-inc" class="responsiveSiteFooter__linkListItem">
+                        ©
+                        2023
+                        Library, Inc.
+                    </li>
+                    <li class="responsiveSiteFooter__linkListItem">
+                        <a class="responsiveSiteFooter__link" href="#">Mobile version
+                        </a>
+                    </li>
                 </ul>
-                </div>
+            </div>
 
 
         </div>
-        
-        </footer>
-<script src="./js/basket.js"></script>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+
+    <script src="./js/basket.js"></script>
 
 </body>
 
