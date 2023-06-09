@@ -491,7 +491,7 @@ ul{
 
 .responsiveSiteFooter__heading{
     font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
-    font-size: 80px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 1.15;
     text-transform: uppercase;
@@ -500,7 +500,7 @@ ul{
 }
 
 .responsiveSiteFooter__linkListItem{
-    font-size: 50px;
+    font-size: 13px;
     color: rgb(196, 198, 199);
 
 }

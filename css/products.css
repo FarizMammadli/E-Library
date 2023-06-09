@@ -38,7 +38,7 @@ section{
     color:#fff;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .heading span{
@@ -74,11 +74,12 @@ section{
 
 .header .logo img{
     height: 6rem;
+    display: none;
 }
 
 .header .navbar a{
-    margin:0 1rem;
-    font-size: 1.6rem;
+    margin:0 0.58rem;
+    font-size: 0.7rem;
     color:#fff;
 }
 .current-a{
@@ -144,7 +145,7 @@ section{
 }
 
 #results{
-    margin-top: 160px;
+    margin-top: 200px;
     padding-left: 40px;
     padding-right: 40px;
     justify-content: center;
