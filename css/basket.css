@@ -303,6 +303,7 @@
         color:beige;
         font-size: 20px;
         font-weight: bold;
+        overflow-y: scroll;
     }
     
     .author-p{
@@ -645,6 +646,7 @@ ul{
     color:beige;
     font-size: 20px;
     font-weight: bold;
+    overflow-y: scroll;
 }
 
 .author-p{
@@ -983,6 +985,7 @@ ul{
     color:beige;
     font-size: 20px;
     font-weight: bold;
+    overflow-y: hidden;
 }
 
 .author-p{

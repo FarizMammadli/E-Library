@@ -429,6 +429,7 @@ section{
     color:beige;
     font-size: 20px;
     font-weight: bold;
+    overflow-y: scroll;
 }
 
 .author-p{
@@ -676,6 +677,8 @@ section{
     color:beige;
     font-size: 20px;
     font-weight: bold;
+    overflow-y: inherit;
+    
  
 }
 

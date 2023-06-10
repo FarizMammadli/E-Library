@@ -121,6 +121,7 @@ p{
     color: bisque;
     font-size: 20px;
     margin: 0 0 10px;
+    margin-right: 10px;
 }
 .content{
     width: 100%;
@@ -139,9 +140,9 @@ p{
 .slider-frame{
    
     overflow: hidden;
-    height: 400px;
+    height: 350px;
     width: 100%;
-    margin-left: 5%;
+    
     margin-top: 20px;
    
 }
